@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Acciones bancarias</h2>
+    <div class="buttons">
+        <button class="create" (click)="on_create_account()">Crear cuenta</button>
+        <button class="deposit" (click)="on_add_cash()" >Consignar</button>
+        <button class="withdraw" (click)="on_withdraw_cash()">Retirar</button>
+        <button class="balance" (click)="on_balance()" >Consultar saldo</button>
+    </div>
+
+    <div>
+        <form >
+			<label for="cuenta">Número de cuenta</label>
+			<input type="text" id="n_cuenta" name="n_cuenta" [(ngModel)]="info.n_cuenta" placeholder="Introduce el número de cuenta">
+			<label for="valor">Valor</label>
+			<input type="number" id="valor" name="valor" [(ngModel)]="info.valor" placeholder="Introduce el valor a consignar o retirar">
+		</form>
+    </div>
+</div>
